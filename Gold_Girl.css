@@ -1,0 +1,517 @@
+/* the Nav */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  /* background: linear-gradient(rgba(0, 0, 200, 0.5), rgba(0, 0, 0, 0.5)); */
+  background-color: rgb(243, 233, 243);
+  max-width: 100vw;
+}
+ul,
+li {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+nav {
+  /* border: 2px solid red; */
+  background: linear-gradient(rgb(163, 245, 160), rgb(245, 223, 162));
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  height: 75px;
+  max-width: 100vw;
+  position: sticky;
+  position: relative;
+}
+nav::before {
+  content: "The No1 Gold Arena";
+  text-align: center;
+  padding: 30px;
+  color: teal;
+  display: block;
+  position: absolute;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+  z-index: -2;
+  width: 50vw;
+  height: 30px;
+  background: linear-gradient(rgb(163, 245, 160), rgb(245, 223, 162));
+  left: 0px;
+  top: 60px;
+}
+nav::after {
+  content: "";
+  font-size: 15px;
+  display: block;
+  position: absolute;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-radius: 50px;
+  z-index: -3;
+  width: 50vw;
+  height: 30px;
+  /* background: linear-gradient(rgb(163, 245, 160), rgb(245, 223, 162)); */
+  background-color: #e0efe3;
+  right: -9px;
+  top: 75px;
+}
+nav ul {
+  display: flex;
+  flex: 0.5 3;
+  width: 45vw;
+  font-size: 20px;
+  /* border: 2px solid blue; */
+  justify-content: space-between;
+}
+.nav_register {
+  flex: 0 0 200px;
+}
+
+ul li {
+  /* border: 2px solid brown; */
+  width: 150px;
+  text-align: center;
+  align-items: center;
+  flex: 1;
+}
+#logo {
+  border-radius: 20px;
+  box-shadow: -2px -2px 3px #7ef17a, 2px 2px 2px rgb(255, 243, 182);
+  height: 45px;
+  width: 180px;
+  transform: skewY(-4deg);
+  flex-grow: 0 0 200px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline wavy rgb(245, 165, 245);
+  background: linear-gradient(rgb(163, 245, 160), rgb(245, 223, 162));
+  animation: Logo_back 3s linear infinite;
+}
+
+acronym,
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+a acronym {
+  color: gold;
+  font-weight: 900;
+  text-decoration: underline wavy rgb(243, 247, 23);
+  animation: Logo 2s linear infinite;
+}
+
+@keyframes Logo {
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: gold;
+  }
+  75% {
+    color: yellow;
+  }
+  100% {
+    color: gold;
+  }
+}
+@keyframes Logo_back {
+  25% {
+    background: linear-gradient(rgb(245, 223, 162), rgb(163, 245, 160));
+  }
+  50% {
+    background: linear-gradient(rgb(163, 245, 160), rgb(245, 223, 162));
+  }
+  75% {
+    background: linear-gradient(rgb(245, 223, 162), rgb(163, 245, 160));
+  }
+  100% {
+    background: linear-gradient(rgb(163, 245, 160), rgb(245, 223, 162));
+  }
+}
+a:hover {
+  /* color: rgb(252, 236, 95); */
+  color: blue;
+}
+ul li:hover {
+  border: 2px solid rgba(0, 255, 0, 0.1);
+  background-color: rgba(240, 239, 181, 0.856);
+  border-radius: 20px;
+}
+
+/* styling the container */
+.container {
+  height: auto;
+  /* border: 2px solid red; */
+  margin-top: 120px;
+}
+
+.sectionb {
+  width: 35vw;
+  margin: 60px;
+  height: 600px;
+  /* border: 2px solid black; */
+}
+/* For product Image styling */
+.sectionb .goldImgFloat {
+  /* border: 2px solid black; */
+  float: right;
+  width: 15vw;
+  height: 600px;
+  margin-left: 20px;
+  overflow: hidden;
+}
+.sectionb .goldImgFloat div {
+  width: 15vw;
+  height: 190px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.sectionb .goldImgLeft {
+  /* border: 2px solid black; */
+  width: 15vw;
+  height: 600px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+.sectionb .goldImgLeft div {
+  width: 15vw;
+  height: 190px;
+}
+.goldImgTwo,
+.goldImgThree,
+.goldImgFive,
+.goldImgSix {
+  margin-top: 20px;
+}
+
+/* For Favour's Image Styling */
+.favvy_image {
+  width: 100%;
+  height: 100%;
+}
+.sectiona {
+  display: block;
+  float: right;
+  width: 55vw;
+  margin-right: 15px;
+  height: 600px;
+  /* border: 2px solid blue; */
+}
+.sectiona h2,
+p {
+  text-align: center;
+}
+.sectiona h2 {
+  color: goldenrod;
+}
+/* border: 2px solid blue; */
+.sectiona p {
+  color: white;
+  text-shadow: 2px 2px 2px grey;
+}
+.sectiona .fas {
+  margin-left: 0px;
+  color: gold;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.icon {
+  box-sizing: border-box;
+  display: inline-block;
+  /* border: 2px solid red; */
+  width: 25vw;
+  margin-top: 20px;
+}
+.icon p {
+  color: goldenrod;
+  text-shadow: 0px 0px 0px grey;
+  font-size: 15px;
+  margin-right: 2px;
+}
+/* .icon p:nth-of-type(3) {
+  color: red;
+  padding-right: -10px;
+} */
+
+.form {
+  float: right;
+  width: 25vw;
+  /* border: 2px solid yellow; */
+  margin-top: 30px;
+}
+.form p {
+  font-family: monospace;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(101, 103, 104);
+  word-spacing: 2px;
+  text-shadow: 0px 0px 0px grey;
+  word-wrap: normal;
+}
+.no-query {
+  display: block;
+  /* border: 2px solid red; */
+  color: goldenrod;
+  /* text-shadow: 2px 2px 2px blue; */
+  width: 18vw;
+  margin: 10px auto;
+  box-shadow: -2px -2px 2px rgb(245, 188, 245), 2px 2px 2px rgb(253, 252, 253);
+  border-radius: 30px;
+}
+.form-query {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  display: block;
+  /* border: 2px solid rgb(136, 241, 76); */
+  color: goldenrod;
+  /* text-shadow: 2px 2px 2px blue; */
+  width: 18vw;
+  margin: 30px auto;
+  box-shadow: -2px -2px 2px rgb(245, 188, 245), 2px 2px 2px rgb(253, 252, 253);
+  border-radius: 30px;
+}
+
+form label,
+input {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+form input {
+  box-shadow: 2px 2px 2px rgb(245, 188, 245), -2px -2px 2px rgb(245, 231, 245);
+}
+#register {
+  background-color: transparent;
+  width: 100px;
+  cursor: pointer;
+  background-color: rgb(243, 233, 243);
+}
+
+@media (max-width: 920px) {
+  form label,
+  input {
+    width: 130px;
+    height: 20px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 750px) {
+  .sectionb {
+    width: 34vw;
+  }
+}
+@media (max-width: 720px) {
+  form label,
+  input {
+    width: 100px;
+    height: 20px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 675px) {
+  nav::before {
+    font-size: 15px;
+    height: 2px;
+  }
+
+  nav ul {
+    flex: 3 3 150px;
+    font-size: 15px;
+    /* border: 2px solid green; */
+  }
+  ul li {
+    text-align: center;
+    /* border: 2px solid yellow; */
+    align-items: center;
+    flex: 1;
+  }
+
+  .nav-register {
+    flex: 0 3 50px;
+    /* border: 2px solid rgb(9, 0, 128); */
+  }
+  #logo {
+    flex: 0 0 200px;
+    /* border: 2px solid rgb(128, 58, 0); */
+  }
+  nav > a {
+    font-size: 15px;
+    transform: rotate(0.25turn);
+  }
+  .container {
+    /* border: 2px solid rgb(37, 218, 52); */
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .sectiona {
+    /* border: 2px solid red; */
+    float: none;
+    margin: 0 auto;
+    width: 80vw;
+    height: auto;
+  }
+  .form {
+    float: none;
+    /* border: 2px solid rgb(129, 123, 123); */
+    width: 80vw;
+    height: 400px;
+    /* height: auto; */
+    margin: 0 auto;
+    margin-top: 40px;
+    line-height: 30px;
+    box-sizing: border-box;
+  }
+
+  .icon {
+    box-sizing: border-box;
+    /* border: 2px solid grey; */
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    line-height: 30px;
+  }
+  .icon-float {
+    float: right;
+    /* border: 2px solid grey; */
+    width: 35vw;
+    margin-right: 0;
+  }
+  .icon-left {
+    /* border: 2px solid rgb(247, 242, 242); */
+    width: 35vw;
+  }
+  .no-query {
+    opacity: 0;
+  }
+  .form-query {
+    position: static;
+    opacity: 1;
+
+    /* border: 2px solid black; */
+    width: 50vw;
+    height: auto;
+  }
+  form label,
+  input {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+    width: 200px;
+    background-color: transparent;
+  }
+
+  section {
+    /* border: 2px solid yellow; */
+    margin-top: 50px;
+  }
+  .sectionb {
+    /* border: 2px solid blue; */
+    margin: 0 auto;
+    width: 80vw;
+    height: auto;
+    margin-top: 100px;
+  }
+  .sectionb .goldImgFloat {
+    width: 30vw;
+    float: right;
+    /* border: 2px solid rgb(226, 17, 17); */
+  }
+  .sectionb .goldImgFloat div {
+    width: 30vw;
+  }
+  .sectionb .goldImgLeft {
+    width: 30vw;
+    /* border: 2px solid rgb(31, 17, 226); */
+  }
+  .sectionb .goldImgLeft div {
+    width: 30vw;
+  }
+  .goldImgTwo,
+  .goldImgThree,
+  .goldImgFive,
+  .goldImgSix {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 420px) {
+  #logo {
+    flex: 0 0 170px;
+
+    /* border: 2px solid rgb(128, 58, 0); */
+  }
+  .no-query label,
+  input {
+    width: 100px;
+    height: 20px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 360px) {
+  #logo {
+    flex: 0 0 100px;
+    height: 30px;
+    /* border: 2px solid rgb(128, 58, 0); */
+    font-size: 15px;
+  }
+}
+
+/* how to make a wavy design */
+/* #wave {
+  margin-top: 150px;
+  position: relative;
+  height: 70px;
+  width: 600px;
+  background: #e0efe3;
+}
+#wave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 340px;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  right: -5px;
+  top: 40px;
+}
+#wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 300px;
+  height: 70px;
+  background-color: #e0efe3;
+  left: 0;
+  top: 27px;
+} */
